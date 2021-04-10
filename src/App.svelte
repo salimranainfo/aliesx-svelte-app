@@ -1,4 +1,5 @@
 <script>
+  import { onMount } from "svelte";
   import Header from "./comps/Header.svelte";
   import HeroArea from "./comps/HeroArea.svelte";
   import Slider from "./comps/Slider.svelte";
@@ -6,19 +7,35 @@
   import Features from "./comps/Features.svelte";
   import Footer from "./comps/Footer.svelte";
 
-  let name = "Rubel";
+  import data from "../src/data.js";
 
-  const handleClick = () => (name = "Salim");
+  const promise = (data) => {
+    return new Promise((resolve) => {
+      resolve(data);
+    });
+  };
+
+  let windowWidth = 0;
+
+  onMount(() => {
+    windowWidth = window.innerWidth;
+
+    window.addEventListener("resize", () => {
+      windowWidth = window.innerWidth;
+    });
+  });
 </script>
 
 <div>
   <Header />
 
   <main>
-    <HeroArea />
-    <Slider />
-    <Steps />
-    <Features />
+    {#await promise(data) then content}
+      <HeroArea content={content.heroarea} {windowWidth} />
+      <Slider />
+      <Steps />
+      <Features />
+    {/await}
   </main>
 
   <Footer />

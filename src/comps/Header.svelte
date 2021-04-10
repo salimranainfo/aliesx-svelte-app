@@ -51,6 +51,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 1px 0px 4px 1px rgba(0, 0, 0, 0.05);
   }
 
   .logo {
