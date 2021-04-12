@@ -50,4 +50,49 @@ module.exports = {
       },
     ],
   },
+  features: {
+    headline: "Quelle est l’experience AilesX ?",
+    paragraph:
+      "La santé, la flexibilité et la personnalisation comptent plus que jamais. Découvrez un nouveau niveau de confort et de liberté de vol. ",
+    footer:
+      "Que ce soit pour vos rendez-vous professionnels en semaine ou pour vos moments de détente du week-end, il y a la destination qui vous convient.",
+    features: [
+      {
+        title: "Réservez jusqu’à 2h avant le vol",
+        details:
+          "Réservez, modifiez et annulez en quelques secondes via notre application",
+        image: "",
+      },
+      {
+        title: "Présentez-vous 15min avant le départ",
+        details:
+          "Il n’y a pas d’attentes ni de foules. Juste un salon privé avec des collations gratuites",
+        image: "/img/features/image_01.png",
+      },
+      {
+        title: "Embarquez dans un avion de première classe",
+        details:
+          "Chaque place de votre avion est à la fois une place côté fenêtre et côté allée",
+        image: "",
+      },
+      {
+        title: "Votre taxi vous attends",
+        details:
+          "Nos membres profitent de tarifs préférenciels pour réserver leur taxi.",
+        image: "/img/features/image_02.png",
+      },
+      {
+        title: "Arrivez en forme, prêt à faire du business",
+        details:
+          "Passez du temps précieux en face à face avec vos clients, fournisseurs et partenaires.",
+        image: "",
+      },
+      {
+        title: "Rentrez à la maison le soir même 🙌",
+        details:
+          "Ne perdez plus une seconde, soyez de retour à temps pour diner en famille.",
+        image: "/img/features/image_03.png",
+      },
+    ],
+  },
 };

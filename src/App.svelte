@@ -34,7 +34,7 @@
       <HeroArea content={content.heroarea} {windowWidth} />
       <Slider content={content.slider} {windowWidth} />
       <Steps content={content.steps} {windowWidth} />
-      <Features />
+      <Features content={content.features} {windowWidth} />
     {/await}
   </main>
 
