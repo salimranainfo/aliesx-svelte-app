@@ -70,8 +70,8 @@
 
   .content-single h3 .number {
     display: inline-block;
-    width: 4rem;
-    height: 3rem;
+    width: 6rem;
+    height: 4rem;
     border: 3.5px solid #6e86b0;
     border-radius: 50%;
     display: flex;
@@ -84,8 +84,8 @@
   .content-single h3 .text {
     width: 100%;
     font-size: 1.45rem;
-    padding-right: 2rem;
-    line-height: 1.5rem;
+    padding-right: 1rem;
+    line-height: 1.75rem;
   }
 
   .content-single p {
