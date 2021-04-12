@@ -52,20 +52,24 @@
 </section>
 
 <style>
+  .container {
+    padding: 3rem 0;
+  }
+
   .hero-wrapper {
     position: relative;
+    margin-bottom: 5rem;
   }
 
   .hero-content {
     position: relative;
     text-align: center;
-    padding: 4rem 0;
   }
 
   .hero-content h1 {
     font-weight: 700;
     margin-bottom: 2rem;
-    padding: 0 3rem;
+    padding: 0 2rem;
   }
 
   .hero-content p {

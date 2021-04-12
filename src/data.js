@@ -30,4 +30,24 @@ module.exports = {
       },
     ],
   },
+  steps: {
+    headline: "Pourquoi AilesX est-il intéressant pour vous ?",
+    steps: [
+      {
+        title: "Gagnez 2 heures sur vos trajets",
+        details:
+          "AilesX incarne la génération du voyage où les files d’attentes n’existent pas, le temps n’est plus perdu.",
+      },
+      {
+        title: "L’aviation d’affaires 10x plus abordable",
+        details:
+          "En voyageant en illimité sur le réseau ailesx, vous divisez jusqu’à par 10 le coût de l’aviation d’affaires.",
+      },
+      {
+        title: "Un confort  haut-de-gamme",
+        details:
+          "Réservez en 30 secondes, pas de file d'attente, pas de foules. Vivez l'experience de la business class... en mieux.",
+      },
+    ],
+  },
 };

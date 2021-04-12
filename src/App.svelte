@@ -33,7 +33,7 @@
     {#await promise(data) then content}
       <HeroArea content={content.heroarea} {windowWidth} />
       <Slider content={content.slider} {windowWidth} />
-      <Steps />
+      <Steps content={content.steps} {windowWidth} />
       <Features />
     {/await}
   </main>
