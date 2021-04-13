@@ -129,12 +129,26 @@
   </div>
 </footer>
 
+<div class="text">
+  <p>
+    AilesX ne possède ni n’exploite d’aéronef. AilesX organise des voyages et
+    d’autres services uniquement en tant que gestionnaire du programme
+    d’adhésion AilesX et en tant que mandataire de ses membres. Tous les vols
+    organisés par AilesX pour ses membres sont effectués par des transporteurs
+    aériens indépendants, tiers agréés par l’EASA.
+  </p>
+</div>
+
 <style>
   .footer {
     background-color: #f2f2f2;
     padding: 2rem;
     font-size: 0.75rem;
     color: #484848;
+  }
+
+  .text {
+    display: none;
   }
 
   .input input {
@@ -180,5 +194,56 @@
 
   .social span:not(:last-of-type) {
     margin-right: 1.25rem;
+  }
+
+  /* 1024px and higher devices */
+  @media (min-width: 1024px) {
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      white-space: nowrap;
+      padding-bottom: 0;
+    }
+
+    .text {
+      display: block;
+      background-color: #f2f2f2;
+      padding: 2rem;
+      padding-top: 0;
+      color: #484848;
+    }
+
+    .text p {
+      font-size: 0.5rem;
+      line-height: 0.75rem;
+    }
+
+    .links {
+      flex-direction: column;
+      order: 1;
+      width: 28rem;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    .links-left,
+    .links-right {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    .input {
+      order: 2;
+      width: 12rem;
+    }
+
+    .copy {
+      display: none;
+    }
+
+    .social {
+      order: 3;
+    }
   }
 </style>

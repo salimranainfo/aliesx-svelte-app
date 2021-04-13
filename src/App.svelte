@@ -27,7 +27,7 @@
 </script>
 
 <div>
-  <Header />
+  <Header {windowWidth} />
 
   <main>
     {#await promise(data) then content}
