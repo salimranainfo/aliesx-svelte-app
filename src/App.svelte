@@ -43,6 +43,6 @@
 
 <style>
   main {
-    margin-top: 4rem;
+    margin-top: 3rem;
   }
 </style>

@@ -16,7 +16,7 @@
 
     <div class="hero-image">
       <img
-        src={windowWidth >= 1024 ? content.imageDesktop : content.imageMobile}
+        src={windowWidth >= 768 ? content.imageDesktop : content.imageMobile}
         alt=""
       />
     </div>
@@ -63,8 +63,8 @@
     width: 100%;
   }
 
-  /* For 1024px and higher Screen Sizes */
-  @media (min-width: 1024px) {
+  /* For 768px and higher Screen Sizes */
+  @media (min-width: 768px) {
     .hero-content {
       padding-top: 7rem;
       position: absolute;
