@@ -35,6 +35,23 @@ h4 {
   color: #484848;
 }
 
+h1,
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 2rem;
+}
+
+h3 {
+  font-weight: 1.75rem;
+  font-weight: bold;
+  line-height: 1.75rem;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
 a {
   text-decoration: none;
   color: inherit;

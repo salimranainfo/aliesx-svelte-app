@@ -35,7 +35,6 @@
   }
 
   .hero-content h1 {
-    font-weight: 700;
     margin-bottom: 2rem;
     padding: 0 3rem;
   }
@@ -110,10 +109,6 @@
 
     .hero-content {
       padding-left: 0;
-    }
-
-    .hero-content h1 {
-      font-size: 2rem;
     }
 
     .hero-image img {

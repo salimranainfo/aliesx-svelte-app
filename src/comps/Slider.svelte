@@ -45,7 +45,7 @@
   <div class="hero">
     <div class="hero-wrapper">
       <div class="hero-content">
-        <h1>{content.headline}</h1>
+        <h2>{content.headline}</h2>
         <p>{content.paragraph}</p>
       </div>
     </div>
@@ -131,8 +131,7 @@
     text-align: center;
   }
 
-  .hero-content h1 {
-    font-weight: 700;
+  .hero-content h2 {
     margin-bottom: 2rem;
     padding: 0 2rem;
   }
@@ -254,6 +253,9 @@
     }
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1024px) {
+    .hero-content {
+      padding-right: 15rem;
+    }
   }
 </style>

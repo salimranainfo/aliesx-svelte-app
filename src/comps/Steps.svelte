@@ -57,8 +57,6 @@
   }
 
   .headline {
-    font-weight: 700;
-    line-height: 1.75rem;
     margin-bottom: 7rem;
     text-align: center;
   }
@@ -89,14 +87,7 @@
 
   .content-single h3 .text {
     width: 100%;
-    font-size: 1.45rem;
     padding-right: 1rem;
-    line-height: 1.75rem;
-  }
-
-  .content-single p {
-    font-size: 0.75rem;
-    line-height: 1.5rem;
   }
 
   /* For 768px and higher */
@@ -132,12 +123,39 @@
 
     .content-single h3 .text {
       width: 100%;
-      font-size: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding: 4rem 2rem;
     }
 
-    .content-single p {
-      font-size: 0.75rem;
-      line-height: 1.5rem;
+    .headline {
+      margin-bottom: 3rem;
+    }
+
+    .content-single {
+      margin-bottom: 3rem;
+      padding-right: 28rem;
+    }
+
+    .content-single h3 {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .content-single h3 .number {
+      width: 3.5rem;
+      height: 3rem;
+      font-size: 1.5rem;
+      margin-right: 1.25rem;
+    }
+
+    .content-single h3 .text {
+      width: 100%;
     }
   }
 </style>
