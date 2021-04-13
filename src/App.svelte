@@ -42,4 +42,7 @@
 </div>
 
 <style>
+  main {
+    margin-top: 4rem;
+  }
 </style>

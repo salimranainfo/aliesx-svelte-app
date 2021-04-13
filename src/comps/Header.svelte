@@ -46,6 +46,15 @@
 </header>
 
 <style>
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 99;
+  }
+
   .container {
     padding: 0.75rem 1.5rem;
     display: flex;
@@ -67,6 +76,7 @@
   }
 
   .nav-list {
+    background-color: white;
     position: absolute;
     padding: 1rem;
     top: 100%;
@@ -74,6 +84,7 @@
     border: 2px solid rgba(0, 0, 0, 0.25);
     box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.15);
     border-radius: 0.5rem;
+    z-index: 100;
   }
 
   .nav-list li a {

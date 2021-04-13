@@ -84,6 +84,8 @@
 
     <div class="footer">
       <p>{content.footer}</p>
+
+      <button>Voir les destinations servies</button>
     </div>
   </div>
 </section>
@@ -172,5 +174,15 @@
     padding: 5rem 0rem 10rem 0rem;
     text-align: center;
     line-height: 1.75rem;
+  }
+
+  .footer button {
+    background-color: #001944;
+    color: white;
+    text-align: center;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    margin-top: 3rem;
   }
 </style>
