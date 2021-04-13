@@ -258,4 +258,24 @@
       padding-right: 15rem;
     }
   }
+
+  /* 1200px and wider devices */
+  @media (min-width: 1200px) {
+    .hero {
+      width: 95%;
+      margin-left: auto;
+    }
+
+    .hero-content h2,
+    .hero-content p {
+      padding-left: 0;
+    }
+  }
+
+  /* 1600px and higher devices */
+  @media (min-width: 1600px) {
+    .hero {
+      width: 80%;
+    }
+  }
 </style>

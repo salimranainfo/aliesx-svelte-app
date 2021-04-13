@@ -166,4 +166,22 @@
       padding: 0.5rem 0.75rem;
     }
   }
+
+  /* 1200px and higher devices */
+  @media (min-width: 1200px) {
+    .container {
+      width: 95%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  /* 1600px and higher devices */
+  @media (min-width: 1600px) {
+    .container {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 </style>

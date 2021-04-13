@@ -65,7 +65,7 @@
   /* For 768px and higher Screen Sizes */
   @media (min-width: 768px) {
     .hero-content {
-      padding-top: 7rem;
+      padding-top: 5rem;
       position: absolute;
       text-align: left;
       padding-left: 2rem;
@@ -100,11 +100,11 @@
     }
   }
 
+  /* 1200px and wider devices */
   @media (min-width: 1200px) {
     .hero-wrapper {
-      width: 1200px;
+      width: 95%;
       margin-left: auto;
-      margin-right: auto;
     }
 
     .hero-content {
@@ -112,11 +112,16 @@
     }
 
     .hero-image img {
-      width: 85%;
+      width: 87%;
     }
   }
 
+  /* 1600px and higher devices */
   @media (min-width: 1600px) {
+    .hero-wrapper {
+      width: 80%;
+    }
+
     .hero-image img {
       width: 75%;
     }

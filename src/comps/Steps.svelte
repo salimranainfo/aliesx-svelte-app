@@ -14,18 +14,20 @@
   </div>
 
   <div class="container">
-    <h2 class="headline">{content.headline}</h2>
+    <div class="wrapper">
+      <h2 class="headline">{content.headline}</h2>
 
-    <div class="content-wrapper">
-      {#each content.steps as step, i}
-        <div class="content-single">
-          <h3>
-            <span class="number">0{i + 1}</span>
-            <span class="text">{step.title}</span>
-          </h3>
-          <p>{step.details}</p>
-        </div>
-      {/each}
+      <div class="content-wrapper">
+        {#each content.steps as step, i}
+          <div class="content-single">
+            <h3>
+              <span class="number">0{i + 1}</span>
+              <span class="text">{step.title}</span>
+            </h3>
+            <p>{step.details}</p>
+          </div>
+        {/each}
+      </div>
     </div>
   </div>
 </section>
@@ -44,6 +46,7 @@
   }
 
   .container {
+    width: 100%;
     padding: 7rem 2rem;
     color: white;
     position: absolute;
@@ -126,6 +129,7 @@
     }
   }
 
+  /* 1024px and wider devices */
   @media (min-width: 1024px) {
     .container {
       padding: 4rem 2rem;
@@ -156,6 +160,64 @@
 
     .content-single h3 .text {
       width: 100%;
+    }
+  }
+
+  /* 1200px and wider devices */
+  @media (min-width: 1200px) {
+    .container .wrapper {
+      width: 95%;
+      margin-left: auto;
+    }
+
+    .container {
+      padding: 5rem 0rem;
+    }
+
+    .headline {
+      margin-bottom: 5rem;
+    }
+
+    .content-single {
+      margin-bottom: 5rem;
+      width: 600px;
+      padding-right: 0;
+    }
+
+    .content-single h3 {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .content-single h3 .number {
+      width: 5rem;
+      height: 4rem;
+      font-size: 1.75rem;
+      margin-right: 1.25rem;
+    }
+
+    .content-single h3 .text {
+      width: 100%;
+      font-size: 1.75rem;
+      line-height: 2rem;
+    }
+
+    .content-single p {
+      font-size: 1.2rem;
+      line-height: 1.75rem;
+    }
+  }
+
+  /* 1600px and higher devices */
+  @media (min-width: 1600px) {
+    .container .wrapper {
+      width: 80%;
+    }
+
+    .container {
+      padding: 14rem 0rem;
     }
   }
 </style>

@@ -369,7 +369,7 @@
 
     .content {
       border-bottom: none;
-      width: min-content;
+      max-width: 975px;
       margin-top: 3rem;
       margin-left: auto;
       margin-right: auto;
@@ -530,7 +530,7 @@
 
     .content-single:nth-of-type(6) {
       position: absolute;
-      top: 46rem;
+      top: 45rem;
       left: 0;
       width: 25rem;
       margin-bottom: 0;
@@ -555,6 +555,14 @@
     .footer {
       padding: 4rem 10rem 0rem 10rem;
       text-align: center;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .container {
+      width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 </style>
