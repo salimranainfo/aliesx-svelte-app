@@ -1,10 +1,16 @@
 <script>
   export let content;
+  export let windowWidth;
 </script>
 
 <section>
   <div class="bg-image">
-    <img src="/img/bg_steps_mobile.png" alt="" />
+    <img
+      src={windowWidth >= 768
+        ? "/img/bg_steps_desktop.png"
+        : "/img/bg_steps_mobile.png"}
+      alt=""
+    />
   </div>
 
   <div class="container">
@@ -91,5 +97,47 @@
   .content-single p {
     font-size: 0.75rem;
     line-height: 1.5rem;
+  }
+
+  /* For 768px and higher */
+
+  @media (min-width: 768px) {
+    .container {
+      padding: 2rem 2rem;
+    }
+
+    .headline {
+      margin-bottom: 2rem;
+      text-align: left;
+    }
+
+    .content-single {
+      margin-bottom: 2rem;
+      padding-right: 15rem;
+    }
+
+    .content-single h3 {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .content-single h3 .number {
+      width: 3.5rem;
+      height: 3rem;
+      font-size: 1.5rem;
+      margin-right: 1.25rem;
+    }
+
+    .content-single h3 .text {
+      width: 100%;
+      font-size: 1.5rem;
+    }
+
+    .content-single p {
+      font-size: 0.75rem;
+      line-height: 1.5rem;
+    }
   }
 </style>
